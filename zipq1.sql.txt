@@ -1,0 +1,15 @@
+
+/*
+SELECT -- executed after
+	city, state, zip 
+FROM  -- first thing to be executed
+	zips;
+
+*/
+
+SELECT -- executed after
+	city, state, zip 
+FROM  -- first thing to be executed
+	zips
+WHERE
+	city = 'CANTON' AND state = 'NY';
