@@ -9,8 +9,8 @@ enrollment(id, coursenum, semester, year)
 
 CREATE TABLE IF NOT EXISTS students(
 	first TEXT NOT NULL,
-	last TEXT NOT NULL,
 	preferred TEXT,
+	last TEXT NOT NULL,
 	id TEXT NOT NULL,
 	PRIMARY KEY (id)
 );
