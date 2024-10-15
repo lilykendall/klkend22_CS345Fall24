@@ -29,3 +29,10 @@ SELECT student.ID, student.name, student.dept_name, CAST(SUM(credits * num_grade
 FROM knutson_grades, student
 WHERE knutson_grades.ID = student.ID
 GROUP BY student.ID;
+
+
+SELECT student.ID, student.name, student.dept_name, CAST(SUM(credits * num_grade) / SUM(credits) AS DECIMAL(10, 3)) AS gpa
+FROM takes NATURAL JOIN gpa NATURAL JOIN course, student
+WHERE takes.course_id = course.course_id AND takes.ID = student.ID
+GROUP BY student.ID, student.dept_name
+ORDER BY student.dept_name, gpa;
