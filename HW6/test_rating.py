@@ -12,7 +12,7 @@ class RatingsTests(unittest.TestCase):
         Test the avg_author_ratings function
         :return: None
         """
-        print('\n test_avg_author_ratings(conn, A. A. Milne)')
+        #print('\n test_avg_author_ratings(conn, A. A. Milne)')
 
         conn = connect()
         result = avg_author_ratings(conn, "A. A. Milne")
@@ -30,7 +30,7 @@ class RatingsTests(unittest.TestCase):
         Test the avg_author_ratings function with a negative test
         :return: None
         """
-        print('\n test_avg_author_ratings_negative(conn, Lily Kendall)')
+        #print('\n test_avg_author_ratings_negative(conn, Lily Kendall)')
 
         conn = connect()
 
@@ -49,7 +49,7 @@ class RatingsTests(unittest.TestCase):
         Test the top_ten_ratings function
         :return: None
         """
-        print('\n test_top_ten_ratings(conn)')
+        #print('\n test_top_ten_ratings(conn)')
 
         conn = connect()
         result = top_ten_ratings(conn)
@@ -68,7 +68,7 @@ class RatingsTests(unittest.TestCase):
         Test the top_n_popular_books function
         :return: None
         """
-        print('\n test_top_n_popular_books(conn, 5)')
+        #print('\n test_top_n_popular_books(conn, 5)')
 
         conn = connect()
         result = top_n_popular_books(conn, 5)
@@ -86,7 +86,7 @@ class RatingsTests(unittest.TestCase):
         Test the top_n_popular_books function with a negative test
         :return: None
         """
-        print('\n test_top_n_popular_books_negative(conn, -5)')
+        #print('\n test_top_n_popular_books_negative(conn, -5)')
 
         conn = connect()
 
@@ -104,7 +104,7 @@ class RatingsTests(unittest.TestCase):
         Test the insert_new_rating function
         :return: None
         """
-        print('\n test_insert_new_rating(conn, 999991,9780143039433, 5)')
+        #print('\n test_insert_new_rating(conn, 999991,9780143039433, 5)')
 
         with connect() as conn:
             # Remove the rating if it exists
@@ -127,7 +127,7 @@ class RatingsTests(unittest.TestCase):
         Test the insert_new_rating function with a negative test
         :return: None
         """
-        print("\n test_insert_new_rating_negative(conn, '999991','9780143039433', 5)")
+        #print("\n test_insert_new_rating_negative(conn, '999991','9780143039433', 5)")
         with connect() as conn:
             try:
                 # Test for a rating that already exists

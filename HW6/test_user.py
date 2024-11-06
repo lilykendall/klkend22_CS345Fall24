@@ -11,7 +11,7 @@ class UsersTests(unittest.TestCase):
         Test the insert_new_user function
         :return: None
         """
-        print('\n test_insert_new_user(conn, "1234567890", "Here", 89)')
+        #print('\n test_insert_new_user(conn, "1234567890", "Here", 89)')
 
         conn = connect()
         # Remove the user first
@@ -33,7 +33,7 @@ class UsersTests(unittest.TestCase):
         Test the insert_new_user function with a negative test
         :return: None
         """
-        print('\n test_insert_new_user_negative(conn, "123456", "Here", 89)')
+        #print('\n test_insert_new_user_negative(conn, "123456", "Here", 89)')
 
         conn = connect()
 

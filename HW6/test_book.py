@@ -14,7 +14,7 @@ class BooksTest(unittest.TestCase):
         :return: None
         """
         conn = connect()
-        print('\n test_most_published_books(conn, 10)')
+        #print('\n test_most_published_books(conn, 10)')
 
         authors = most_published_books(conn, 10)
 
@@ -33,7 +33,7 @@ class BooksTest(unittest.TestCase):
         Test the most_published_books function with a negative test
         :return: None
         """
-        print('\n test_most_published_books_negative(conn, -10)')
+        #print('\n test_most_published_books_negative(conn, -10)')
 
         conn = connect()
 
@@ -52,7 +52,7 @@ class BooksTest(unittest.TestCase):
         Test the book_avg_rating function
         :return: None
         """
-        print("\n test_book_avg_rating(conn, 'winnie-the-pooh', 'a. a. milne')")
+        #print("\n test_book_avg_rating(conn, 'winnie-the-pooh', 'a. a. milne')")
         conn = connect()
 
         avg = book_avg_rating(conn, 'winnie-the-pooh', 'a. a. milne')
@@ -69,7 +69,7 @@ class BooksTest(unittest.TestCase):
         Test the book_avg_rating function with a negative test
         :return: None
         """
-        print('\n test_book_avg_rating_negative(conn, "Lily Kendall", "Lily Kendall")')
+        #print('\n test_book_avg_rating_negative(conn, "Lily Kendall", "Lily Kendall")')
         conn = connect()
 
         try:
@@ -86,7 +86,7 @@ class BooksTest(unittest.TestCase):
         Test the insert_new_book function
         :return: None
         """
-        print('\n test_insert_new_book(conn, book)')
+        #print('\n test_insert_new_book(conn, book)')
 
         with connect() as conn:
             # Remove the book if it exists
@@ -109,7 +109,7 @@ class BooksTest(unittest.TestCase):
         Test the insert_new_book function with a negative test
         :return: None
         """
-        print("\n test_insert_new_book_negative(conn, '9780143039433', 'The Grapes of Wrath', 'John Steinbeck', 2006, 'Penguin Classics','urls', 'urlm', 'urll')")
+        #print("\n test_insert_new_book_negative(conn, '9780143039433', 'The Grapes of Wrath', 'John Steinbeck', 2006, 'Penguin Classics','urls', 'urlm', 'urll')")
         with connect() as conn:
             try:
                 # Test for a book that already exists
