@@ -1,0 +1,9 @@
++----------------------------+-----------------+---------------------+
+| Title                      | Author          |   Number of Ratings |
+|----------------------------+-----------------+---------------------|
+| Wild Animus                | Rich Shapero    |                2502 |
+| The Lovely Bones: A Novel  | Alice Sebold    |                1295 |
+| The Da Vinci Code          | Dan Brown       |                 887 |
+| The Nanny Diaries: A Novel | Emma McLaughlin |                 828 |
+| Bridget Jones's Diary      | Helen Fielding  |                 815 |
++----------------------------+-----------------+---------------------+

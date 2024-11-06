@@ -1,0 +1,14 @@
++---------------------+-------------------+
+| Author              |   Number of Books |
+|---------------------+-------------------|
+| Agatha Christie     |               632 |
+| William Shakespeare |               567 |
+| Stephen King        |               524 |
+| Ann M. Martin       |               423 |
+| Francine Pascal     |               373 |
+| Carolyn Keene       |               373 |
+| Isaac Asimov        |               330 |
+| Nora Roberts        |               315 |
+| Barbara Cartland    |               307 |
+| Charles Dickens     |               302 |
++---------------------+-------------------+
